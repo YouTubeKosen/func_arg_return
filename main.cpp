@@ -1,26 +1,16 @@
 #include <iostream>
 #include <stdint.h>
 
-void callByRef(uint32_t & num)
+uint32_t callStack(uint32_t arg0, uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4, uint32_t arg5, uint32_t arg6, uint32_t arg7)
 {
-    num = 80;
-}
-
-void callByValue(uint32_t num)
-{
-    num = 80;
+    return 0;
 }
 
 int main(void) {
     uint32_t num;
     num = 50;
-    std::cout << num << "\n";
 
-    callByValue(num);
-    std::cout << num << "\n";
-
-    callByRef(num);
-    std::cout << num << "\n";
+    callStack(num, num, num, num, num, num, num, num);
 
     return 0;
 }
