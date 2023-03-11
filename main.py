@@ -1,6 +1,4 @@
-def get_object_id(a):
-    return id(a)
+def fact(a):
+    return a * fact(a-1)
 
-var = "hello world!"
-print(id(var))
-print(get_object_id(var))
+fact(10)
