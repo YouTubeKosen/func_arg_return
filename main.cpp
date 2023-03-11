@@ -1,12 +1,12 @@
 #include <iostream>
 #include <stdint.h>
 
-void callByRef(uint32_t & num)
+void callByValue(uint32_t num)
 {
     num = 80;
 }
 
-void callByValue(uint32_t num)
+void callByRef(uint32_t & num)
 {
     num = 80;
 }
