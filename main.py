@@ -1,4 +1,7 @@
 def fact(a):
-    return a * fact(a-1)
+    if(a == 1):
+        return 1
+    else:
+        return a * fact(a-1)
 
-fact(10)
+print(fact(1000))
